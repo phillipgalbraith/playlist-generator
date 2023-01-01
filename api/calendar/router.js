@@ -3,7 +3,10 @@ const router = express.Router();
 
 router.use('/', (req, res, next) => {
     res.json({ 
-        'calendar': 'calendar'
+        'calendar': {
+            "time": "7AM",
+            "name": "coffee",
+        }
     })
 })
 
